@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Sol</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <style>
         img {
-            width: 310px;
+            width: 300px;
             max-width: 90%;
             margin-top: 5px;
         }
@@ -26,6 +27,7 @@
         }
         main {
             padding: 20px;
+            margin-bottom: 20px;
         }
         section {
             background-color: #2c2c2c;
@@ -42,51 +44,72 @@
             text-align: center;
             padding: 10px;
         }
+        footer a{
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
     <header>
         <h1>El Sol</h1>
-        <img src="../imagenes/sol.jpg" alt="El Sol">
+        <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+            <model-viewer
+                src="../modelos/sol.glb"
+                alt="Modelo 3D del Sol"
+                auto-rotate
+                camera-controls
+                style="width: 400px; height: 400px;">
+            </model-viewer>
+        </div>
     </header>
     <main>
         <section>
-            
             <h2>Información</h2>
             <p>
-                El Sol es una estrella de tipo enana amarilla situada en el centro del sistema solar. Es una esfera casi perfecta de plasma caliente compuesta principalmente de hidrógeno y helio,
-                cuya energía es generada por reacciones de fusión nuclear en su núcleo. Esta energía se libera en forma de luz, calor y otras radiaciones, haciendo posible la vida en la Tierra.
-                El Sol influye en los movimientos de todos los planetas, asteroides y cometas que giran a su alrededor gracias a su enorme fuerza gravitatoria.
-                A pesar de ser solo una estrella promedio en tamaño dentro de la galaxia, para nosotros es inmenso y vital, representando la fuente principal de luz y calor.
-                Su superficie visible, llamada fotosfera, tiene una temperatura de unos 5,500 °C, mientras que su núcleo puede alcanzar temperaturas de alrededor de 15 millones de °C.
-                A lo largo de su vida, el Sol pasará por varias etapas evolutivas hasta convertirse, en miles de millones de años, en una gigante roja y luego en una enana blanca.
+                El Sol es la estrella en el centro de nuestro sistema solar. Es una esfera casi perfecta de plasma caliente,
+                compuesta principalmente de hidrógeno y helio, sostenida por su propia gravedad. A través de la fusión nuclear en su núcleo,
+                convierte hidrógeno en helio y libera una enorme cantidad de energía en forma de luz y calor, lo que hace posible la vida en la Tierra.
+                El Sol es, con diferencia, el objeto más grande y masivo del sistema solar.
             </p>
         </section>
         <section>
             <h2>Características</h2>
             <ul>
-                <li>Tipo de estrella: Enana amarilla</li>
-                <li>Diámetro: 1,392,700 Km</li>
-                <li>Temperatura superficial: 5,500 °C</li>
-                <li>Temperatura del nucleo: 15 millones °C</li>
-                <li>Edad: 4,6 mil millones de años</li>
-                <li>Distancia de la tierra: 149,6 millones Km</li>
-                <li>Composición: Principalmente hidrógeno y helio</li>
+                <li>Tipo de estrella: Enana amarilla.</li>
+                <li>Diámetro: 1.392.700 km (unas 109 veces el diámetro de la Tierra).</li>
+                <li>Masa: 330.000 veces la masa de la Tierra.</li>
+                <li>Temperatura de la superficie: Aproximadamente 5.500 °C.</li>
+                <li>Temperatura del núcleo: Cerca de 15 millones de °C.</li>
+                <li>Edad: Aproximadamente 4.6 mil millones de años.</li>
+                <li>Composición: 
+                    <ul>
+                        <li>Hidrógeno (74%)</li>
+                        <li>Helio (24%)</li>
+                        <li>Otros gases (2%)</li>
+                    </ul>
+                </li>
             </ul>
         </section>
         <section>
             <h2>Curiosidades</h2>
             <ul>
-                <li>Es el objeto más brillante del cielo: A pesar de que hay estrellas mucho más grandes y luminosas que el Sol, ninguna es tan cercana a la Tierra, por lo que parece mucho más brillante.</li>
-                <li>El Sol tiene 99.86% de la masa del sistema solar: Esto significa que la mayoría de la masa del sistema solar está contenida en el Sol, y su gravedad es la que mantiene a los planetas, asteroides y cometas en sus órbitas.</li>
-                <li>La luz del Sol tarda 8 minutos en llegar a la Tierra: Aunque el Sol está a unos 150 millones de kilómetros de distancia, su luz viaja a una velocidad de 300,000 km por segundo, por lo que llega a nuestro planeta en solo 8 minutos y 20 segundos.</li>
+                <li>Fuente de vida: Sin el Sol, no existiría vida tal como la conocemos; proporciona la energía necesaria para los ecosistemas terrestres.</li>
+                <li>Consumo de combustible: Cada segundo, el Sol convierte alrededor de 600 millones de toneladas de hidrógeno en helio.</li>
+                <li>No es eterno: El Sol está a mitad de su vida; en unos 5.000 millones de años se expandirá para convertirse en una gigante roja y después terminará como una enana blanca.</li>
+                <li>Eclipses: Los eclipses solares ocurren porque la Luna y el Sol parecen tener el mismo tamaño en el cielo, a pesar de que el Sol es mucho más grande (y más lejano).</li>
+                <li>Viento solar: El Sol emite constantemente partículas cargadas en todas direcciones, conocido como viento solar, que afecta a los planetas y causa fenómenos como las auroras boreales.</li>
+                <li>Color real: Aunque lo vemos amarillo desde la Tierra, el color real del Sol es blanco; la atmósfera terrestre dispersa la luz y nos da esa apariencia amarillenta.</li>
             </ul>
         </section>
     </main>
     <footer>
         <p><a href="../index.html#sol">Volver</a></p>
-        <p>&copy; 2025 Información sobre el Sol</p>
+        <p>&copy; 2025 Información sobre el Sol.</p>
     </footer>
 </body>
 </html>

@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planeta Mercurio</title>
+    <title>Planeta Neptuno</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <style>
         img {
             width: 300px;
@@ -26,6 +27,7 @@
         }
         main {
             padding: 20px;
+            margin-bottom: 20px;
         }
         section {
             background-color: #2c2c2c;
@@ -42,53 +44,74 @@
             text-align: center;
             padding: 10px;
         }
+        footer a{
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Planeta Mercurio</h1>
-        <img src="../imagenes/mercurio.jpg" alt="Planeta Mercurio">
+        <h1>Planeta Neptuno</h1>
+        <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+            <model-viewer
+                src="../modelos/neptuno.glb"
+                alt="Modelo 3D de Neptuno"
+                auto-rotate
+                camera-controls
+                style="width: 400px; height: 400px;">
+            </model-viewer>
+        </div>
     </header>
     <main>
         <section>
-            
             <h2>Información</h2>
             <p>
-                Mercurio es el planeta más cercano al Sol y el más pequeño del sistema solar. Debido a su proximidad al Sol,
-                experimenta temperaturas extremas entre el día y la noche. No tiene atmósfera significativa para retener el calor,
-                por lo que durante el día puede alcanzar temperaturas muy altas y por la noche descender a valores extremadamente bajos.
-                Su superficie rocosa está llena de cráteres, similar a la de la Luna. Mercurio es un planeta rápido, completando una órbita alrededor del Sol en solo 88 días terrestres.
+                Neptuno es el octavo y más lejano planeta del sistema solar. Es un gigante gaseoso, conocido por su intenso color azul,
+                causado principalmente por la presencia de metano en su atmósfera. Neptuno es un planeta frío y ventoso,
+                y fue el primer planeta descubierto mediante cálculos matemáticos antes de ser observado directamente con un telescopio.
+                Su atmósfera dinámica está llena de tormentas gigantescas, y sus vientos son los más rápidos conocidos en el sistema solar.
             </p>
         </section>
         <section>
             <h2>Características</h2>
             <ul>
-                <li>Diámetro: 4,879 Km</li>
-                <li>Distancia al Sol: 57,9 millones de Km</li>
-                <li>Duración del día: 59 días terrestres</li>
-                <li>Duración del año: 88 días terrestres</li>
-                <li>Temperatura:
+                <li>Diámetro: Aproximadamente 49,244 km.</li>
+                <li>Distancia al Sol: 4.5 mil millones de kilómetros.</li>
+                <li>Duración del día: 16 horas terrestres.</li>
+                <li>Duración del año: 165 años terrestres.</li>
+                <li>Temperatura promedio: -214 °C</li>
+                <li>Gravedad: 11,15 m/s² (Un poco mas fuerte que la tierra)</li>
+                <li>Satélites naturales: 14 lunas conocidas, siendo la más grande Tritón.</li>
+                <li>Composición: 
                     <ul>
-                        <li>Día: Hasta 430 °C</li>
-                        <li>Noche: Hasta -180 °C</li>
+                        <li>Nucleo rocoso</li>
+                        <li>Hidrógeno</li>
+                        <li>Helio</li>
+                        <li>Metano</li>
                     </ul>
                 </li>
-                <li>Composición: Principalmente roca y hierro</li>
             </ul>
         </section>
         <section>
             <h2>Curiosidades</h2>
             <ul>
-                <li>Es el planeta más rápido: Mercurio viaja alrededor del Sol a unos 47 km por segundo, más rápido que cualquier otro planeta.</li>
-                <li>Casi no tiene atmósfera: Esto hace que no pueda retener el calor ni protegerse de impactos de meteoritos, dejando su superficie llena de cráteres.</li>
-                <li>Tiene un gran núcleo: Su núcleo metálico ocupa cerca del 85% del radio del planeta.</li>
+                <li>Vientos extremos: Neptuno tiene los vientos más rápidos del sistema solar, que pueden alcanzar velocidades de más de 2.100 km/h.</li>
+                <li>Gran Mancha Oscura: Se han observado tormentas gigantescas, similares a la Gran Mancha Roja de Júpiter. La más famosa es la Gran Mancha Oscura, detectada por la nave Voyager 2.</li>
+                <li>Descubrimiento: Fue descubierto en 1846 gracias a predicciones matemáticas por Urbain Le Verrier y John Couch Adams.</li>
+                <li>Una larga vida: Se estima que Saturno tiene más de 4.5 mil millones de años, y que ha existido en su forma actual durante la mayor parte de la historia del sistema solar.</li>
+                <li>Tritón, su luna principal: Tritón orbita Neptuno en dirección opuesta a la rotación del planeta (movimiento retrógrado), lo que sugiere que pudo ser un objeto capturado.</li>
+                <li>Poca luz solar: En Neptuno, el Sol parece 400 veces más tenue que desde la Tierra.</li>
             </ul>
         </section>
     </main>
     <footer>
-        <p><a href="../index.html#mercurio">Volver</a></p>
-        <p>&copy; 2025 Información sobre Mercurio</p>
+        <p><a href="../index.html#neptuno">Volver</a></p>
+        <p>&copy; 2025 Información sobre Neptuno.</p>
     </footer>
 </body>
 </html>

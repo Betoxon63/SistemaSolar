@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planeta Mercurio</title>
+    <title>Planeta Marte</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <style>
         img {
             width: 300px;
@@ -26,6 +27,7 @@
         }
         main {
             padding: 20px;
+            margin-bottom: 20px;
         }
         section {
             background-color: #2c2c2c;
@@ -42,53 +44,73 @@
             text-align: center;
             padding: 10px;
         }
+        footer a{
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Planeta Mercurio</h1>
-        <img src="../imagenes/mercurio.jpg" alt="Planeta Mercurio">
+        <h1>Planeta Marte</h1>
+        <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+            <model-viewer
+                src="../modelos/marte.glb"
+                alt="Modelo 3D de Marte"
+                auto-rotate
+                camera-controls
+                style="width: 400px; height: 400px;">
+            </model-viewer>
+        </div>
     </header>
     <main>
         <section>
-            
             <h2>Información</h2>
             <p>
-                Mercurio es el planeta más cercano al Sol y el más pequeño del sistema solar. Debido a su proximidad al Sol,
-                experimenta temperaturas extremas entre el día y la noche. No tiene atmósfera significativa para retener el calor,
-                por lo que durante el día puede alcanzar temperaturas muy altas y por la noche descender a valores extremadamente bajos.
-                Su superficie rocosa está llena de cráteres, similar a la de la Luna. Mercurio es un planeta rápido, completando una órbita alrededor del Sol en solo 88 días terrestres.
+                Marte es el cuarto planeta del sistema solar y es conocido como el "Planeta Rojo" debido a su color característico,
+                causado por la gran cantidad de óxido de hierro en su superficie. Es un planeta rocoso, con paisajes de montañas,
+                valles, desiertos y casquetes polares. Marte ha sido uno de los principales objetivos de exploración espacial debido
+                a las similitudes que tiene con la Tierra y la posibilidad de encontrar indicios de vida pasada.
             </p>
         </section>
         <section>
             <h2>Características</h2>
             <ul>
-                <li>Diámetro: 4,879 Km</li>
-                <li>Distancia al Sol: 57,9 millones de Km</li>
-                <li>Duración del día: 59 días terrestres</li>
-                <li>Duración del año: 88 días terrestres</li>
-                <li>Temperatura:
+                <li>Diámetro: Aproximadamente 6.779 Km.</li>
+                <li>Distancia al Sol: 228 millones de Km.</li>
+                <li>Duración del día: 24,6 horas.</li>
+                <li>Duración del año: 687 días terrestres.</li>
+                <li>Temperatura promedio: -63 °C</li>
+                <li>Gravedad: 3,71 m/s² (38% de la gravedad terrestre)</li>
+                <li>Satélites naturales: Fobos y Deimos.</li>
+                <li>Composición: 
                     <ul>
-                        <li>Día: Hasta 430 °C</li>
-                        <li>Noche: Hasta -180 °C</li>
+                        <li>Dióxido de carbono (95%)</li>
+                        <li>Nitrógeno (2,7%)</li>
+                        <li>Argón (1,6%)</li>
                     </ul>
                 </li>
-                <li>Composición: Principalmente roca y hierro</li>
             </ul>
         </section>
         <section>
             <h2>Curiosidades</h2>
             <ul>
-                <li>Es el planeta más rápido: Mercurio viaja alrededor del Sol a unos 47 km por segundo, más rápido que cualquier otro planeta.</li>
-                <li>Casi no tiene atmósfera: Esto hace que no pueda retener el calor ni protegerse de impactos de meteoritos, dejando su superficie llena de cráteres.</li>
-                <li>Tiene un gran núcleo: Su núcleo metálico ocupa cerca del 85% del radio del planeta.</li>
+                <li>Tamaño: Marte es aproximadamente la mitad del tamaño de la Tierra.</li>
+                <li>El monte más alto: Olympus Mons, el volcán más grande y alto del sistema solar, es tres veces más alto que el Monte Everest.</li>
+                <li>Clima extremo: Las tormentas de polvo en Marte pueden cubrir todo el planeta durante semanas.</li>
+                <li>Agua congelada: Se ha confirmado la existencia de agua en forma de hielo en sus polos, y recientemente se encontraron indicios de agua líquida subterránea.</li>
+                <li>Posible vida: Aunque no se ha encontrado vida, Marte es uno de los lugares más prometedores para buscar evidencia de vida pasada o presente.</li>
+                <li>Días similares: Un día en Marte (llamado "sol") dura solo unos 40 minutos más que un día en la Tierra.</li>
             </ul>
         </section>
     </main>
     <footer>
-        <p><a href="../index.html#mercurio">Volver</a></p>
-        <p>&copy; 2025 Información sobre Mercurio</p>
+        <p><a href="../index.html#marte">Volver</a></p>
+        <p>&copy; 2025 Información sobre Marte.</p>
     </footer>
 </body>
 </html>

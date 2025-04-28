@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planeta Mercurio</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <style>
         img {
             width: 300px;
@@ -26,6 +27,7 @@
         }
         main {
             padding: 20px;
+            margin-bottom: 20px;
         }
         section {
             background-color: #2c2c2c;
@@ -42,53 +44,77 @@
             text-align: center;
             padding: 10px;
         }
+        footer a{
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
     <header>
         <h1>Planeta Mercurio</h1>
-        <img src="../imagenes/mercurio.jpg" alt="Planeta Mercurio">
+        <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+            <model-viewer
+                src="../modelos/mercurio.glb"
+                alt="Modelo 3D de Mercurio"
+                auto-rotate
+                camera-controls
+                style="width: 400px; height: 400px;">
+            </model-viewer>
+        </div>
     </header>
     <main>
         <section>
-            
             <h2>Información</h2>
             <p>
-                Mercurio es el planeta más cercano al Sol y el más pequeño del sistema solar. Debido a su proximidad al Sol,
-                experimenta temperaturas extremas entre el día y la noche. No tiene atmósfera significativa para retener el calor,
-                por lo que durante el día puede alcanzar temperaturas muy altas y por la noche descender a valores extremadamente bajos.
-                Su superficie rocosa está llena de cráteres, similar a la de la Luna. Mercurio es un planeta rápido, completando una órbita alrededor del Sol en solo 88 días terrestres.
+                Mercurio es el planeta más cercano al Sol y el más pequeño del sistema solar. Es un mundo rocoso, similar a la Luna,
+                con una superficie llena de cráteres debido a impactos de meteoritos. Carece de una atmósfera densa que lo proteja,
+                lo que provoca enormes variaciones de temperatura entre el día y la noche. Debido a su proximidad al Sol y su órbita rápida,
+                su nombre proviene del mensajero de los dioses en la mitología romana.
             </p>
         </section>
         <section>
             <h2>Características</h2>
             <ul>
-                <li>Diámetro: 4,879 Km</li>
-                <li>Distancia al Sol: 57,9 millones de Km</li>
-                <li>Duración del día: 59 días terrestres</li>
-                <li>Duración del año: 88 días terrestres</li>
-                <li>Temperatura:
+                <li>Diámetro: Aproximadamente 4.880 km</li>
+                <li>Distancia al Sol: Cerca de 58 millones de kilómetros.</li>
+                <li>Duración del día: 59 días terrestres.</li>
+                <li>Duración del año: 88 días terrestres.</li>
+                <li>Temperatura promedio:
                     <ul>
-                        <li>Día: Hasta 430 °C</li>
-                        <li>Noche: Hasta -180 °C</li>
+                        <li>Durante el día: 430 °C</li>
+                        <li>Durante la noche: -180 °C</li>
                     </ul>
                 </li>
-                <li>Composición: Principalmente roca y hierro</li>
+                <li>Gravedad: 3,7 m/s² (mucho menor que la de la Tierra)</li>
+                <li>Satélites naturales: No posee lunas.</li>
+                <li>Composición: 
+                    <ul>
+                        <li>Nucleo de hierro</li>
+                        <li>Capa de silicato (manto y corteza)</li>
+                    </ul>
+                </li>
             </ul>
         </section>
         <section>
             <h2>Curiosidades</h2>
             <ul>
-                <li>Es el planeta más rápido: Mercurio viaja alrededor del Sol a unos 47 km por segundo, más rápido que cualquier otro planeta.</li>
-                <li>Casi no tiene atmósfera: Esto hace que no pueda retener el calor ni protegerse de impactos de meteoritos, dejando su superficie llena de cráteres.</li>
-                <li>Tiene un gran núcleo: Su núcleo metálico ocupa cerca del 85% del radio del planeta.</li>
+                <li>Rotación peculiar: Mercurio gira muy lentamente sobre su eje, pero orbita muy rápido alrededor del Sol.</li>
+                <li>Cráteres gigantes: Uno de sus cráteres más grandes, Caloris Basin, tiene unos 1.550 km de diámetro.</li>
+                <li>Efecto de marea solar: La gravedad del Sol ha ralentizado su rotación a través de un fenómeno llamado "acoplamiento de marea".</li>
+                <li>Día más largo que su año: En Mercurio, un día (de amanecer a amanecer) dura más que un año mercuriano completo.</li>
+                <li>Superficie parecida a la Luna: Aunque parece lunar, Mercurio tiene una composición interna muy distinta, con un núcleo metálico gigantesco.</li>
+                <li>Sin satélites: No tiene lunas ni anillos.</li>
             </ul>
         </section>
     </main>
     <footer>
         <p><a href="../index.html#mercurio">Volver</a></p>
-        <p>&copy; 2025 Información sobre Mercurio</p>
+        <p>&copy; 2025 Información sobre Mercurio.</p>
     </footer>
 </body>
 </html>

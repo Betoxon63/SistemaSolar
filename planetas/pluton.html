@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planeta Mercurio</title>
+    <title>Pluton</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <style>
         img {
             width: 300px;
@@ -26,6 +27,7 @@
         }
         main {
             padding: 20px;
+            margin-bottom: 20px;
         }
         section {
             background-color: #2c2c2c;
@@ -42,53 +44,75 @@
             text-align: center;
             padding: 10px;
         }
+        footer a{
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Planeta Mercurio</h1>
-        <img src="../imagenes/mercurio.jpg" alt="Planeta Mercurio">
+        <h1>Pluton</h1>
+        <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+            <model-viewer
+                src="../modelos/pluton.glb"
+                alt="Modelo 3D de Pluton"
+                auto-rotate
+                camera-controls
+                style="width: 400px; height: 400px;">
+            </model-viewer>
+        </div>
     </header>
     <main>
         <section>
-            
             <h2>Información</h2>
             <p>
-                Mercurio es el planeta más cercano al Sol y el más pequeño del sistema solar. Debido a su proximidad al Sol,
-                experimenta temperaturas extremas entre el día y la noche. No tiene atmósfera significativa para retener el calor,
-                por lo que durante el día puede alcanzar temperaturas muy altas y por la noche descender a valores extremadamente bajos.
-                Su superficie rocosa está llena de cráteres, similar a la de la Luna. Mercurio es un planeta rápido, completando una órbita alrededor del Sol en solo 88 días terrestres.
+                Plutón es un planeta enano ubicado en el cinturón de Kuiper, una región del sistema solar llena de cuerpos helados.
+                Aunque fue considerado el noveno planeta desde su descubrimiento en 1930, en 2006 fue reclasificado como planeta enano por la Unión Astronómica Internacional.
+                Plutón es pequeño, helado y tiene una superficie compleja con montañas,
+                valles y posiblemente glaciares de nitrógeno congelado. A pesar de su tamaño, Plutón presenta una actividad geológica sorprendente.
             </p>
         </section>
         <section>
             <h2>Características</h2>
             <ul>
-                <li>Diámetro: 4,879 Km</li>
-                <li>Distancia al Sol: 57,9 millones de Km</li>
-                <li>Duración del día: 59 días terrestres</li>
-                <li>Duración del año: 88 días terrestres</li>
-                <li>Temperatura:
+                <li>Diámetro: 2.377 km (más pequeño que la Luna)</li>
+                <li>Distancia al Sol: 5.900 millones de kilómetros.</li>
+                <li>Duración del día: 6,4 días terrestres.</li>
+                <li>Duración del año: 248 años terrestres.</li>
+                <li>Temperatura promedio: -229 °C.</li>
+                <li>Gravedad: 0,62 m/s² (aproximadamente un 6% de la gravedad de la Tierra)</li>
+                <li>Satélites naturales: 5 lunas conocidas, siendo Caronte la más grande.</li>
+                <li>Composición: 
                     <ul>
-                        <li>Día: Hasta 430 °C</li>
-                        <li>Noche: Hasta -180 °C</li>
+                        <li>Nucleo rocoso</li>
+                        <li>Capa de hielo</li>
+                        <li>Nitrógeno</li>
+                        <li>Metano</li>
+                        <li>Monóxido de carbono</li>
                     </ul>
                 </li>
-                <li>Composición: Principalmente roca y hierro</li>
             </ul>
         </section>
         <section>
             <h2>Curiosidades</h2>
             <ul>
-                <li>Es el planeta más rápido: Mercurio viaja alrededor del Sol a unos 47 km por segundo, más rápido que cualquier otro planeta.</li>
-                <li>Casi no tiene atmósfera: Esto hace que no pueda retener el calor ni protegerse de impactos de meteoritos, dejando su superficie llena de cráteres.</li>
-                <li>Tiene un gran núcleo: Su núcleo metálico ocupa cerca del 85% del radio del planeta.</li>
+                <li>Doble sistema: Plutón y su luna Caronte son tan cercanos en tamaño que algunos astrónomos los consideran un sistema binario.</li>
+                <li>Órbita inclinada: Su órbita está más inclinada y más elíptica que la de los planetas clásicos.</li>
+                <li>Cambio de estado: A medida que Plutón se acerca al Sol en su órbita, parte de su superficie helada se sublima, formando una atmósfera temporal que se congela de nuevo cuando se aleja.</li>
+                <li>Descubrimiento: Fue descubierto en 1930 por Clyde Tombaugh.</li>
+                <li>Reclasificación: En 2006, Plutón fue reclasificado como planeta enano debido a que no cumple el criterio de "limpiar su órbita" de otros objetos.</li>
+                <li>Exploración espacial: La nave New Horizons de la NASA pasó cerca de Plutón en 2015, proporcionando las primeras imágenes detalladas de su superficie.</li>
             </ul>
         </section>
     </main>
     <footer>
-        <p><a href="../index.html#mercurio">Volver</a></p>
-        <p>&copy; 2025 Información sobre Mercurio</p>
+        <p><a href="../index.html#pluton">Volver</a></p>
+        <p>&copy; 2025 Información sobre Pluton.</p>
     </footer>
 </body>
 </html>
