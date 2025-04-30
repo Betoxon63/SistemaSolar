@@ -7,11 +7,6 @@
     <title>El Sol</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <style>
-        img {
-            width: 300px;
-            max-width: 90%;
-            margin-top: 5px;
-        }
         body {
             font-family: Arial, sans-serif;
             background-color: #1e1e1e;
@@ -33,7 +28,7 @@
             background-color: #2c2c2c;
             border-radius: 8px;
             margin-bottom: 20px;
-            padding: 5px;
+            padding: 20px;
         }
         ul ul {
             list-style-type: circle;
@@ -63,49 +58,82 @@
                 alt="Modelo 3D del Sol"
                 auto-rotate
                 camera-controls
+                exposure="0.4"
                 style="width: 400px; height: 400px;">
             </model-viewer>
         </div>
     </header>
     <main>
         <section>
-            <h2>Información</h2>
+            <h2>Descripción</h2>
             <p>
-                El Sol es la estrella en el centro de nuestro sistema solar. Es una esfera casi perfecta de plasma caliente,
-                compuesta principalmente de hidrógeno y helio, sostenida por su propia gravedad. A través de la fusión nuclear en su núcleo,
-                convierte hidrógeno en helio y libera una enorme cantidad de energía en forma de luz y calor, lo que hace posible la vida en la Tierra.
-                El Sol es, con diferencia, el objeto más grande y masivo del sistema solar.
+                El Sol es una estrella de tipo espectral G2V situada en el centro del sistema solar. Es una enorme esfera casi perfecta de plasma caliente, mantenida unida por su propia gravedad.
+                Representa el 99,86% de toda la masa del sistema solar, y su energía proporciona la luz y el calor necesarios para la vida en la Tierra. Desde el espacio,
+                el Sol se percibe como un intenso disco luminoso amarillo-blanco, aunque sus colores reales abarcan todo el espectro de luz. Su núcleo es el sitio de constantes reacciones nucleares de fusión,
+                donde el hidrógeno se transforma en helio, liberando inmensas cantidades de energía. El Sol ha sido objeto de adoración y estudio por civilizaciones antiguas como la egipcia, la azteca y la inca, considerándolo una deidad central en sus culturas.
+            </p>
+            <p>
+                Un hecho impactante es que, a pesar de su tamaño gigantesco, el Sol es considerado una estrella de tamaño mediano en comparación con otras en la galaxia.
             </p>
         </section>
         <section>
-            <h2>Características</h2>
+            <h2>Características Principales</h2>
             <ul>
-                <li>Tipo de estrella: Enana amarilla.</li>
-                <li>Diámetro: 1.392.700 km (unas 109 veces el diámetro de la Tierra).</li>
-                <li>Masa: 330.000 veces la masa de la Tierra.</li>
-                <li>Temperatura de la superficie: Aproximadamente 5.500 °C.</li>
-                <li>Temperatura del núcleo: Cerca de 15 millones de °C.</li>
-                <li>Edad: Aproximadamente 4.6 mil millones de años.</li>
-                <li>Composición: 
-                    <ul>
-                        <li>Hidrógeno (74%)</li>
-                        <li>Helio (24%)</li>
-                        <li>Otros gases (2%)</li>
-                    </ul>
-                </li>
+                <li>Tipo de estrella: Enana amarilla (G2V)</li>
+                <li>Diámetro: 1.392.700 km</li>
+                <li>Masa: 1,989 x 10³⁰ kg</li>
+                <li>Edad: 4.600 millones de años</li>
+                <li>Temperatura superficial: 5.500 °C</li>
+                <li>Temperatura del núcleo: 15.000.000 °C</li>
+                <li>Composición atmosférica: Hidrógeno (74%), Helio (24%), otros gases (2%)</li>
+                <li>Duración de rotación: 24 a 36 días</li>
+                <li>Distancia media a la Tierra: 149,6 millones de km</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Planetas en su Órbita</h2>
+            <p>El Sol mantiene en su órbita a una variedad de cuerpos celestes, incluidos planetas, asteroides, cometas y planetas enanos.</p>
+            <ul>
+                <li>Mercurio: El planeta más cercano al Sol.</li>
+                <li>Venus: Similar en tamaño a la Tierra, pero con una atmósfera densa y tóxica.</li>
+                <li>Tierra: El único planeta conocido que alberga vida.</li>
+                <li>Marte: El planeta rojo, famoso por su paisaje desértico.</li>
+                <li>Júpiter: El gigante gaseoso más grande del sistema solar.</li>
+                <li>Saturno: Conocido por su espectacular sistema de anillos.</li>
+                <li>Urano: Un gigante helado que rota de lado.</li>
+                <li>Neptuno: Un mundo azul y ventoso en el borde del sistema solar.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Composición</h2>
+            <p>El Sol está compuesto principalmente de:</p>
+            <ul>
+                <li>Núcleo: Donde ocurre la fusión nuclear que convierte hidrógeno en helio, liberando energía.</li>
+                <li>Zona radiativa: La energía se mueve lentamente hacia fuera mediante radiación.</li>
+                <li>Zona convectiva: Corrientes de convección transportan la energía hacia la superficie.</li>
+                <li>Fotosfera: La "superficie" visible del Sol, desde donde se emite la mayor parte de su luz.</li>
+                <li>Cromosfera: Una capa más delgada, visible durante los eclipses como un halo rojizo.</li>
+                <li>Corona: La atmósfera exterior extremadamente caliente, que se extiende millones de kilómetros hacia el espacio.</li>
             </ul>
         </section>
         <section>
             <h2>Curiosidades</h2>
             <ul>
-                <li>Fuente de vida: Sin el Sol, no existiría vida tal como la conocemos; proporciona la energía necesaria para los ecosistemas terrestres.</li>
-                <li>Consumo de combustible: Cada segundo, el Sol convierte alrededor de 600 millones de toneladas de hidrógeno en helio.</li>
-                <li>No es eterno: El Sol está a mitad de su vida; en unos 5.000 millones de años se expandirá para convertirse en una gigante roja y después terminará como una enana blanca.</li>
-                <li>Eclipses: Los eclipses solares ocurren porque la Luna y el Sol parecen tener el mismo tamaño en el cielo, a pesar de que el Sol es mucho más grande (y más lejano).</li>
-                <li>Viento solar: El Sol emite constantemente partículas cargadas en todas direcciones, conocido como viento solar, que afecta a los planetas y causa fenómenos como las auroras boreales.</li>
-                <li>Color real: Aunque lo vemos amarillo desde la Tierra, el color real del Sol es blanco; la atmósfera terrestre dispersa la luz y nos da esa apariencia amarillenta.</li>
+                <li>El Sol contiene más del 99% de toda la masa del sistema solar.</li>
+                <li>Cada segundo, el Sol convierte alrededor de 600 millones de toneladas de hidrógeno en helio.</li>
+                <li>El viento solar del Sol influye en todo el sistema solar, formando la heliosfera.</li>
+                <li>El Sol "vivirá" aproximadamente otros 5.000 millones de años antes de convertirse en una gigante roja y, finalmente, en una enana blanca.</li>
+                <li>La luz del Sol tarda 8 minutos y 20 segundos en llegar a la Tierra.</li>
             </ul>
         </section>
+        <section style ="text-align: center;">
+            <h2>Galería de Imágenes</h2>
+            <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+                <img src="../imagenes/sol1.jpg" alt="Imagen del Sol" style="width: 300px; height: auto; margin: 10px;">
+                <img src="../imagenes/sol2.jpg" alt="Imagen del Sol" style="width: 500px; height: auto; margin: 10px;">
+                <img src="../imagenes/sol3.jpg" alt="Imagen del Sol" style="width: 300px; height: auto; margin: 10px;">
+            </div>
+            </section>
     </main>
     <footer>
         <p><a href="../index.html#sol">Volver</a></p>
